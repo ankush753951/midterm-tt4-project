@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm TT4 - Simulation</title>
+    <title>Product List</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css"> <!-- Assuming your compiled CSS is here -->
 </head>
 
 <body>
-
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="border-end bg-white" id="sidebar-wrapper">
@@ -46,37 +49,22 @@
                     </div>
                 </div>
             </nav>
-            <!-- Page content-->
-            <div id="content" class="container-fluid p-5">
-                <h1 class="mt-4">Simple Sidebar</h1>
-                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
-                    non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                <p>
-                    Make sure to keep all page content within the
-                    <code>#page-content-wrapper</code>
-                    . The top navbar is optional, and just for demonstration. Just create an element with the
-                    <code>#sidebarToggle</code>
-                    ID which will toggle the menu when clicked.
-                </p>
-                <div class="alert alert-primary" role="alert">
-                    Here's an example of how to assemble your products. Pay close attention to all the details,
-                    especially the dependencies, as they are crucial for the proper setup. Although this is not
-                    described in the documentation, it would show attention to detail if you remove this example from
-                    the homepage after use. You can simply comment it out. Don’t forget to do the same for the
-                    JavaScript code to avoid any errors due to missing dependencies.
-                </div>
 
-                <div class="alert alert-warning" role="alert">
-                    Create your own layout, don't just copy this example, use your creativity.
-                </div>
+    <div class="container my-5">
+        <!-- Page title -->
+        <h1 class="text-center mb-4">Our Products</h1>
 
-                <h2>Product list example</h2>
-                <div id="products" class="d-flex gap-2">
-                    <!-- Products -->
-                </div>
-            </div>
-        </div>
+        <!-- Row for displaying products -->
+        <div class="row" id="product-list"></div>
     </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="dist/bundle.js"></script> <!-- Assuming you have bundled the JS -->
 </body>
 
 </html>
